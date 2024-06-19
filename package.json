@@ -1,0 +1,11 @@
+{
+  "name": "granmobile",
+  "version": "1.0.0",
+  "description": "Uma versão Mobile do site da faculdade Gran Tiet, com intuito de estudos sobre navegações em react native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
