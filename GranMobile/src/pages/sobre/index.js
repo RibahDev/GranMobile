@@ -20,7 +20,10 @@ export function Sobre(){
                     <Text style={{color: "#fff", fontSize: 18, textAlign: "center"}}>Conhecer</Text>
                 </View>
 
+                 <Image source={require("../../assets/person.png")} style={styles.personFoto}/>
+
             </View>
+
         </View>
     )
 }
@@ -42,7 +45,7 @@ const styles = StyleSheet.create({
     sobreContainer:{
         backgroundColor: "#fff",
         width: "90%",
-        height: "58%",
+        height: "80%",
         borderRadius: 20,
         padding: 20,
         alignItems: "center"
@@ -58,6 +61,10 @@ const styles = StyleSheet.create({
         padding: 10,
         backgroundColor: "#00a8ff",
         borderRadius: 60,
-        marginTop: 20
+        marginTop: 25,
+    },
+    personFoto:{
+        height:200,
+        resizeMode: "contain"
     }
 })

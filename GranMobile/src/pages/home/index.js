@@ -3,7 +3,7 @@ import  { View, Text, StyleSheet, Image, SafeAreaView, ScrollView } from 'react-
 export function Home(){
 
     return(
-      <ScrollView>
+      <ScrollView style={{flex:1}}>
         <View style={styles.container}>
 
           <View style={styles.header}>
@@ -51,13 +51,16 @@ const styles = StyleSheet.create({
     },
     novidadesContainer:{
       alignItems:"center",
-      width: "80%",
-      height: "100%"
+      justifyContent: "space-around",
+      width: "90%",
+      flex:1,
+      backgroundColor: "#fff",
+      borderRadius: 10
       
     },
     noviFoto:{
-      width: 350,
-      resizeMode: 'contain'
-
+      width: "100%",
+      resizeMode: 'contain',
+      marginBottom: 50
     }
 })

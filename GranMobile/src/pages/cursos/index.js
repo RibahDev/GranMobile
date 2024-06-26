@@ -3,26 +3,31 @@ import  { View, Text, StyleSheet, Image, ScrollView } from 'react-native'
 export function Cursos(){
 
     return(
-        <View style={styles.container}>
+        <ScrollView>
+            <View style={styles.container}>
 
-            <View style={styles.header}>
-                <Text style={{fontSize:20, color:"#fff", fontWeight: "bold", borderBottomWidth:1, borderColor: "#fff"}}>Cursos</Text>
+                <View style={styles.header}>
+                    <Text style={{fontSize:20, color:"#fff", fontWeight: "bold", borderBottomWidth:1, borderColor: "#fff"}}>Cursos</Text>
+                </View>
+                
+                <Text style={{fontWeight: "bold", fontSize: 16, marginBottom: 10}}>Principais cursos</Text>
+                
+                <View style={styles.cursos}>
+                    <Image source={require("../../assets/engagronoma.png")} style={styles.logo} />
+                    <Image source={require("../../assets/edfisica.png")} style={styles.logo} />
+                    <Image source={require("../../assets/enfer.jpeg")} style={styles.logo} />
+                    <Image source={require("../../assets/ciecont.png")} style={styles.logo} />
+                    <Image source={require("../../assets/adm.png")} style={styles.logo} />
+                    <Image source={require("../../assets/engcomput.png")} style={styles.logo} />
+                </View>
+                <View style={styles.button}>
+                    <Text style={{color: "#fff", fontSize: 16}}>Inscrever-se</Text>
+                </View>
+                <View style={styles.footer}>
+                    <Image source={require("../../assets/footer.png")} style={styles.ftFooter} />
+                </View>
             </View>
-            
-            <Text style={{fontWeight: "bold", fontSize: 16, marginBottom: 10}}>Principais cursos</Text>
-            
-            <View style={styles.cursos}>
-                <Image source={require("../../assets/engagronoma.png")} style={styles.logo} />
-                <Image source={require("../../assets/edfisica.png")} style={styles.logo} />
-                <Image source={require("../../assets/enfer.jpeg")} style={styles.logo} />
-                <Image source={require("../../assets/ciecont.png")} style={styles.logo} />
-                <Image source={require("../../assets/adm.png")} style={styles.logo} />
-                <Image source={require("../../assets/engcomput.png")} style={styles.logo} />
-            </View>
-            <View style={styles.button}>
-                <Text style={{color: "#fff", fontSize: 16}}>Inscrever-se</Text>
-            </View>
-        </View>
+        </ScrollView>
     )
 }
 const styles = StyleSheet.create({
@@ -47,6 +52,7 @@ const styles = StyleSheet.create({
         padding: 10,
         backgroundColor: "#fff",
         justifyContent: "space-between",
+        borderRadius: 20,
     },
     logo:{
         margin: 5,
@@ -60,5 +66,13 @@ const styles = StyleSheet.create({
         backgroundColor: "#00a8ff",
         borderRadius: 60,
         marginTop: 20
+    },
+    footer:{
+        width:"100%"
+    },
+    ftFooter:{
+        width: "100%",
+        resizeMode: "contain"
+        
     }
 })
